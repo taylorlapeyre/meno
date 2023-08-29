@@ -59,6 +59,7 @@ export default async function NewCourse({
         <input
           className="border border-slate-500 rounded block"
           name="isTutorial"
+          type="checkbox"
         />
       </label>
       <label className="block mb-4">
