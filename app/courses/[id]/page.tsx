@@ -5,7 +5,7 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import ApplicationForm from "@/components/CourseApplicationForm";
 import Link from "next/link";
 
-export default async function Group({ params }: { params: { id: string } }) {
+export default async function Course({ params }: { params: { id: string } }) {
   const supabase = createServerComponentClient<Database>({ cookies });
 
   const {
@@ -30,7 +30,7 @@ export default async function Group({ params }: { params: { id: string } }) {
   return (
     <main>
       <div style={{ marginBottom: 24 }}>
-      <Link href="/courses">
+      <Link href="/">
         ← Back to courses
       </Link>
       </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NavBar({ user }: { user: User | null }) {
   return (
-    <nav className="flex justify-between items-center w-full border padding p-4 my-7 rounded">
+    <nav className="flex justify-between items-center w-full border padding p-4 rounded-lg mt-4 mb-4">
       <p>{user ? user.email : "no user"}</p>
       <div className="flex gap-4">
       <Link
